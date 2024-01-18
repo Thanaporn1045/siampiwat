@@ -1,0 +1,125 @@
+body {
+  font-family: sans-serif;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background-color: rgb(29,29,29,1);
+  overflow: hidden;
+}
+
+.base-timer {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  top: 40px; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+  width: 100%; 
+  height: 100%; 
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 2px;
+  stroke: rgb(29,29,29,1);
+}
+
+.base-timer__path-remaining {
+  stroke-width: 1px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+  color: rgb(255, 255, 255);
+
+  
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(255, 255, 255);
+}
+
+.base-timer__path-remaining.orange {
+  color: rgb(252, 252, 252);
+}
+
+.base-timer__path-remaining.red {
+  color: rgb(255, 255, 255);
+}
+
+.base-timer__label {
+
+  display: flex;
+  
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: -400px; 
+  font-size: 250px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.thank{
+  
+  display: flex;
+  
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: -160px; 
+  font-size: 80px;
+  font-family: 'Kanit', sans-serif;
+  /* font-weight: bold; */
+  color: white;
+}
+
+.v3_52 {
+  width: 373px;
+  height: 79px;
+  
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1050px;
+  left: 32%;
+  
+}
+.v3_53 {
+  width: 373px;
+  height: 79px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 43px;
+  border-top-right-radius: 43px;
+  border-bottom-left-radius: 43px;
+  border-bottom-right-radius: 43px;
+  
+}
+.v3_54 {
+  width: 364px;
+  color: rgba(23,23,23,1);
+  position: absolute;
+  top: 19px;
+  left: 3px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: Bold;
+  font-size: 34px;
+  opacity: 1;
+  text-align: center;
+}
+.hidden {
+  opacity: 0;
+}
