@@ -4,11 +4,11 @@ padding: 0;
 overflow: hidden;
 
 background-color: rgba(58, 45, 75, 1);
-background-size:95%; */
-background-image: url('./SiamPiwat/allBG.png'); 
+background-size:95%; 
+background-image: url(/images/BGimg_1stpage.png);
 background-repeat: no-repeat; 
 background-attachment: fixed; 
-background-position-y: -100px;
+/* background-position-y: -10px; */
 background-position-x: 25px;
 
 }
@@ -20,10 +20,10 @@ background-position-x: 25px;
 } */
 .clickforstart
 {
-  position: relative;
+  /* position: relative;
   text-align: center;
-  margin-top: 850px;
-  z-index: 1;
+  margin-top: 850px; */
+  /* z-index: 1; */
   
 }
 .iconbar
