@@ -1,0 +1,45 @@
+body {
+margin: 0;
+padding: 0;
+overflow: hidden;
+
+background-color: rgba(58, 45, 75, 1);
+background-size:95%; */
+background-image: url('./SiamPiwat/allBG.png'); 
+ background-repeat: no-repeat; 
+background-attachment: fixed; 
+background-position-y: -100px;
+background-position-x: 25px;
+
+}
+/* .BG{
+  width: 95%;
+  top: -500px;
+  z-index: 2;
+
+} */
+.clickforstart
+{
+  position: relative;
+  text-align: center;
+  margin-top: 850px;
+  z-index: 1;
+  
+}
+.iconbar
+{
+  position: fixed;
+bottom: 0;
+width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 60px;
+}
+
+.hidden {
+  opacity: 0;
+  /* background-image: url(''); */
+  background-color: rgba(58, 45, 75, 1);
+}
+

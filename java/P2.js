@@ -1,65 +1,206 @@
+// window.addEventListener('load', function() {
+//     var buttonElement = document.querySelector('#tt .button');
 
-// window.onload = checkInputValue();
-// checkInputValue();
-// function checkInputValue() {
-   
-//     const queryString = window.location.search;
-// 	const urlParams = new URLSearchParams(queryString);
-// 	const StorageDeckA = urlParams.get('SetStorageDeckA');
-//     if(StorageDeckA =="P1"){
-//     var pagealert1 = document.getElementById('p1');
+//     // ตรวจสอบว่าอ็อบเจ็กต์ที่ค้นหามีค่าเป็น null หรือไม่
+//     if (buttonElement !== null) {
+//         // ตรวจสอบว่า buttonElement มี property 'style' หรือไม่
+//         if (buttonElement.style !== undefined) {
+//             // ตั้งค่าสีพื้นหลังของปุ่ม
+//             buttonElement.style.backgroundColor = 'blue';
+//         } else {
+//             console.error('Property "style" is undefined');
+//         }
+//     } else {
+//         console.error('Element not found');
+//     }
+// });
+
+
+
+
+// สร้างฟังก์ชันเพื่อเปลี่ยนสีปุ่มเป็นสีขาว
+// function changeButtonColor() {
+//     var button = document.getElementById('p1');
     
-//     alert(pagealert1.style.backgroundColor );
+//     button.style.backgroundColor = 'white';
+//     // บันทึกสถานะใน localStorage
+//     localStorage.setItem('buttonColor', 'white');
+// }
+
+// // สร้างฟังก์ชันเพื่อรีเซ็ตสีปุ่มกลับไปเป็นสีดำ
+// function resetButtonColor() {
+//     var button = document.getElementById('p1');
+//     button.style.backgroundColor = 'black';
+//     // บันทึกสถานะใน localStorage
+//     localStorage.setItem('buttonColor', 'black');
+// }
+
+// // สร้างฟังก์ชันเมื่อคลิกที่ปุ่ม
+// function handleClick() {
+//     changeButtonColor();
+//     // ทำสิ่งที่คุณต้องการเมื่อคลิกปุ่ม, เช่น การเปลี่ยนหน้า
+//     // ตัวอย่าง: window.location.href = 'yourNewPage.html';
+// }
+
+// // เช็คสถานะที่บันทึกไว้ใน localStorage เมื่อโหลดหน้า
+// document.addEventListener('DOMContentLoaded', function() {
+//     var storedColor = localStorage.getItem('buttonColor');
+//     if (storedColor === 'white') {
+//         // ถ้าสีใน localStorage เป็นสีขาว ให้เปลี่ยนสีปุ่มเป็นสีขาว
+//         changeButtonColor();
 //     }
+// });
+
+// // เพิ่ม event listener สำหรับเหตุการณ์ onclick ที่ปุ่ม
+// document.getElementById('p1').addEventListener('click', function() {
+//     handleClick();
+//     setTimeout(function() {
+//         resetButtonColor();
+//     }, 1000); // 1000 มิลลิวินาที (1 วินาที) หลังจากที่คลิก
+// });
 
 
-//     // alert(Username);
-// 	// const Password = urlParams.get('password');
- 
+
+
+
+
+
+
+
+// function randomscencewhennoonetouch() {
+//     var pagealert1 = document.getElementById('randomscence');
+//     var link = document.createElement('a');
+//     var randomNumber2 = Math.floor(Math.random() * 8) + 1;
+//     link.href = `./P2.html?SetStorageDeckA=S9P${randomNumber2}`;
+//     pagealert1.appendChild(link);
+//     setTimeout(function() {
+//         link.click();
+//     }, 1000);
+// }
+
+
+
+// let touchedscreen = false;
+
+// // เพิ่ม event listener สำหรับเหตุการณ์ ontouchstart
+// document.addEventListener('touchstart', function() {
+//     touchedscreen = true;
+// });
+
+// // ตั้งเวลา 10 วินาที
+// setTimeout(function() {
+//     // ตรวจสอบว่าไม่มีการแตะหน้าจอไอแพด
+//     if (!touchedscreen) {
+//         randomscencewhennoonetouch();
 //     }
+// }, 180000);
 
 
-window.onload = function() {
-    // หา input range ในเอกสาร
-    var rangeInput = document.querySelector('input[type="range"]');
 
-    // หาลิงก์ทั้งหมด
-    var links = document.querySelectorAll('a');
 
-    // เพิ่ม event listener สำหรับการเปลี่ยนค่า input range
-    rangeInput.addEventListener('input', function(event) {
-        // แสดงค่าที่ถูกตั้งค่า
-        var currentValue = rangeInput.value;
 
-        // ควบคุมลิงก์ตามค่าที่ถูกตั้งค่า
-        controlLinks(currentValue, event);
-    });
 
-    // ตรวจสอบค่าเริ่มต้น
-    controlLinks(rangeInput.value, null);
-};
-
-function controlLinks(value, event) {
-    // ถ้าค่าเท่ากับ 1, ให้ควบคุมลิงก์ที่มี id เท่ากับ "a1" เป็นต้น
-    // คุณสามารถเพิ่มเงื่อนไขไปเรื่อย ๆ ตามค่าที่คุณต้องการ
-    if (value == 1) {
-        if (event) {
-            event.preventDefault(); // ป้องกันการรีโหลดหน้าเว็บ
-        }
-        document.getElementById('a1').click(); // ทำการคลิกลิงก์ a1
-    } else if (value == 2) {
-        if (event) {
-            event.preventDefault(); // ป้องกันการรีโหลดหน้าเว็บ
-        }
-        document.getElementById('a2').click(); // ทำการคลิกลิงก์ a2
-    } else if (value == 3) {
-        if (event) {
-            event.preventDefault(); // ป้องกันการรีโหลดหน้าเว็บ
-        }
-        document.getElementById('a3').click(); // ทำการคลิกลิงก์ a3
+function speedvalue(){
+    var speedvalue = document.getElementById('slider');
+    var slider = document.getElementById('slider');
+    if (speedvalue.value == 0.1) {
+        slider.value = 1;
+    } else if (speedvalue.value == 0.3) {
+        slider.value = 2;
+    } else if (speedvalue.value == 0.6) { 
+        slider.value = 3; 
+    }else if (speedvalue.value == 0.9) { 
+        slider.value = 4; 
+    }else if (speedvalue.value == 1) { 
+        slider.value = 5; 
+    }else if (speedvalue.value == 2) { 
+        slider.value = 6;
+    }else if (speedvalue.value == 3) { 
+        slider.value = 7; 
+    }else if (speedvalue.value == 4) { 
+        slider.value = 8; 
     }
-    // เพิ่มเงื่อนไขไปเรื่อย ๆ ตามค่าที่คุณต้องการ
+    else if (myElement.value == 5) { 
+        slider.value = 9; 
+    }
+
 }
+
+
+function up() {
+ 
+var myElement = document.getElementById('slider');
+if (myElement.value == 1) {
+            document.getElementById('a1').click(); 
+        } else if (myElement.value == 2) {
+            document.getElementById('a2').click(); 
+        } else if (myElement.value == 3) { 
+            document.getElementById('a3').click(); 
+        }else if (myElement.value == 4) { 
+            document.getElementById('a4').click(); 
+        }else if (myElement.value == 5) { 
+            document.getElementById('a5').click(); 
+        }else if (myElement.value == 6) { 
+            document.getElementById('a6').click(); 
+        }else if (myElement.value == 7) { 
+            document.getElementById('a7').click(); 
+        }else if (myElement.value == 8) { 
+            document.getElementById('a8').click(); 
+        }
+        else if (myElement.value == 9) { 
+            document.getElementById('a9').click(); 
+        }
+        
+}
+
+// function random() {
+//     var pagealert1 = document.getElementById('randomclick');
+//     var link = document.createElement('a');
+
+   
+//     var randomNumber1 = Math.floor(Math.random() * 8) + 1;
+//     var randomNumber2 = Math.floor(Math.random() * 8) + 1;
+//     var randomNumber3 = (Math.random() * (5 - 0.1) + 0.1).toFixed(1);
+
+    
+//     link.href = `./P2.html?SetStorageDeckA=S${randomNumber1}P${randomNumber2}&&SetStorageSpeedDeckA=${randomNumber3}`;
+    
+    
+//     pagealert1.appendChild(link);
+//     setTimeout(function() {
+//         link.click();
+//     }, 500);
+//     // alert("ok");
+// }
+
+
+// var noTouchTime = 0;
+
+// // ฟังก์ชันที่จะถูกเรียกเมื่อไม่มีการแตะหน้าจอเป็นเวลา 10 วินาที
+// function handleNoTouch() {
+//     // ทำสิ่งที่คุณต้องการเมื่อไม่มีการแตะหน้าจอเป็นเวลา 10 วินาที
+//     alert("ไม่มีการแตะหน้าจอเป็นเวลา 10 วินาที");
+// }
+
+// // เพิ่ม event listener สำหรับการแตะหน้าจอ
+// document.addEventListener('touchstart', onTouchOrClick);
+
+// // เพิ่ม event listener สำหรับคลิก
+// document.addEventListener('click', onTouchOrClick);
+
+// // ใช้ setInterval เพื่อตรวจสอบเวลาที่ไม่มีการแตะหน้าจอทุก 1 วินาที
+// setInterval(function() {
+//     // เพิ่มเวลาที่ไม่มีการแตะหน้าจอทุก 1 วินาที
+//     noTouchTime++;
+
+//     // ตรวจสอบว่าไม่มีการแตะหน้าจอเป็นเวลา 10 วินาทีหรือไม่
+//     if (noTouchTime >= 10) {
+//         // เรียกฟังก์ชันที่จะทำงานเมื่อไม่มีการแตะหน้าจอเป็นเวลา 10 วินาที
+//         handleNoTouch();
+//     }
+// }, 1000); // ตรวจสอบทุก 1 วินา
+
+
 
 
 function p1click() {

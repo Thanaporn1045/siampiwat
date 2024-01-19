@@ -18,7 +18,7 @@
     
 
 </head>
-<body id="bd2">
+<body id="bd2" >
     
     <div class="v3_2">
     <img class="imghlab" src="./images/Frame.png">
@@ -49,7 +49,7 @@
         <div class="line4"></div>
     
 
-        <div class="square-imagediv">
+<div class="square-imagediv">
   <div class="square-image" onclick=d1click() ><a href="./P2.html?SetStorageDeckA=P1"><img id="direction1" src="./images/deactive/de1.png"></a></div>
   <div class="square-image" onclick=d2click()><a href="./P2.html?SetStorageDeckA=P2"><img id="direction2" src="./images/deactive/de2.png"></a></div>
   <div class="square-image" onclick=d3click()><a href="./P2.html?SetStorageDeckA=P3"><img id="direction3" src="./images/deactive/de3.png"></a></div>
@@ -70,9 +70,9 @@
 <div class="ani-imagediv2">
     <div class="ani-image2"><img src="./images/rabbit.png"></div></div>
 
-    <div class="slider">
-        <input type="range" min="1" max="9" value="$$$GetStorageSpeedDeckA$$$">
-        <!-- <a id="a1" href="./P2.html?SetStorageSpeedDeckA=0.1"></a>
+    <div class="slider" >
+        <input id="slider"  type="range" min="1" max="9" onpointerup=up()>
+        <a id="a1" href="./P2.html?SetStorageSpeedDeckA=0.1"></a>
         <a id="a2" href="./P2.html?SetStorageSpeedDeckA=0.3"></a>
         <a id="a3" href="./P2.html?SetStorageSpeedDeckA=0.6"></a>
         <a  id="a4" href="./P2.html?SetStorageSpeedDeckA=0.9"></a>
@@ -80,10 +80,9 @@
         <a id="a6" href="./P2.html?SetStorageSpeedDeckA=2"></a>
         <a id="a7" href="./P2.html?SetStorageSpeedDeckA=3"></a>
         <a  id="a8" href="./P2.html?SetStorageSpeedDeckA=4"></a>
-        <a  id="a9" href="./P2.html?SetStorageSpeedDeckA=5"></a> -->
+        <a  id="a9" href="./P2.html?SetStorageSpeedDeckA=5"></a> 
         <!-- <p id="rangeValue">100</p> -->
-
-
+                
         </div>
         <span class="slow">slow</span>
         <span class="fast">fast</span>
@@ -95,6 +94,17 @@
     <span class="v3_281">เมื่อกดตกลงแล้ว ไฟจะเริ่มเล่นตามการตั้งค่าของคุณเป็นเวลา 30 วินาที</span>
     <div class="v3_52"><div class="v3_53"></div><span class="v3_54" onclick="fadeOutAndChangePage()">ตกลง</span></div>
     </div>
+
+
+    <input  type="text" name="inputValue" value="$$$GetStorageSpeedDeckA$$$"/>
+    <input  type="text" name="inputValue" value="$$$GetStorageDeckA$$$"/>
+    <input  type="text" name="inputValue" value="$$$GetStoragePlaceDeckA$$$"/>
+    
+
+
+
+
+    <div id="randomscence"></div>
     <!-- ทดลอง <span color="white"></span>current fadetime is $$$GetFadeTime$$$</span>
     <span color="white"></span>current Sto is $$$GetStorageDeckA$$$</span>
     <a href="./P2.html?SetStorageDeckA=S11">SetStorageDeckA=S11 seconds</a>
