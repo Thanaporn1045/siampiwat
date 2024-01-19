@@ -1,126 +1,205 @@
 <!DOCTYPE html HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link href="./css/P2.css" rel="stylesheet" /><title>Document</title>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/P2.css" rel="stylesheet" />
+    <title>Document</title>
     <script type="text/javascript" src="./java/P2.js"></script>
     <!-- <script type="text/javascript" src="./java/check_storage.js"></script> -->
 
-<meta name="generator" content="mc">
- <meta name="author" content="jky">
- <meta name="date" content="2018-05-02">
- <meta name="robots" content="none">
- <meta name="robots" content="noindex,nofollow">
- <meta name="GOOGLEBOT" content="NOARCHIVE">
- <meta http-equiv="content-type" content="text/html; charset=utf-8">
- <meta http-equiv="pragma" content="no-index">
- <meta http-equiv="pragma" content="no-cache">
- <meta http-equiv="cache-control" content="no-cache">
-    
-
-</head>
-<body id="bd2" >
-    
-    <div class="v3_2">
-    <img class="imghlab" src="./images/Frame.png">
-       
-        <span class="choosecolor">เลือกสี ทิศทาง และความเร็ว ที่ต้องการ เพื่อเปลี่ยนสีไฟจริงตามใจชอบ</span>
-        <div class="line1"></div>
-        <span class="choosecolor2">เลือกกลุ่มสี </span>
-        <div class="line2"></div>
-       
-        <div class="v3_59">
-            <div class="button-container">
-                <a href="./P2.html?SetStorageDeckA=S1"><div id="p1" class="button" onclick="p1click()" >Palette 1</div></a>
-                <a href="./P2.html?SetStorageDeckA=S2"><div id="p2" class="button" onclick="p2click()">Palette 2</div></a>
-                <a href="./P2.html?SetStorageDeckA=S3"><div id="p3" class="button" onclick="p3click()">Palette 3</div></a>
-                <a href="./P2.html?SetStorageDeckA=S4"><div id="p4" class="button" onclick="p4click()">Palette 4</div></a>
-                <a href="./P2.html?SetStorageDeckA=S5"><div id="p5" class="button" onclick="p5click()">Palette 5</div></a>
-                <a href="./P2.html?SetStorageDeckA=S6"><div id="p6" class="button" onclick="p6click()">Palette 6</div></a>
-                <a href="./P2.html?SetStorageDeckA=S7"><div id="p7" class="button" onclick="p7click()">Palette 7</div></a>
-                <a href="./P2.html?SetStorageDeckA=S8"><div id="p8"  class="button" onclick="p8click()">Palette 8</div></a>
-            </div>
+    <meta name="generator" content="mc" />
+    <meta name="author" content="jky" />
+    <meta name="date" content="2018-05-02" />
+    <meta name="robots" content="none" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="GOOGLEBOT" content="NOARCHIVE" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="pragma" content="no-index" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body id="bd2">
+    <div class="flex justify-center">
+    <div>
+        <div class="flex justify-center">
+      <img class="imghlab" src="./images/logoclient.png" />
         </div>
-
-        <span class="v3_95">Your color scheme result :</span>
-        <div class="white-box"></div>
-
-        <div class="line3"></div>
-        <span class="choosecolor4">เลือกทิศทาง </span>
-        <div class="line4"></div>
+        <hr>
+      <div class="choosecolor"
+        >เลือกกลุ่มสี / Select Colors Palettes</div>
+      <hr>
+    
     
 
-<div class="square-imagediv">
-  <div class="square-image" onclick=d1click() ><a href="./P2.html?SetStorageDeckA=P1"><img id="direction1" src="./images/deactive/de1.png"></a></div>
-  <div class="square-image" onclick=d2click()><a href="./P2.html?SetStorageDeckA=P2"><img id="direction2" src="./images/deactive/de2.png"></a></div>
-  <div class="square-image" onclick=d3click()><a href="./P2.html?SetStorageDeckA=P3"><img id="direction3" src="./images/deactive/de3.png"></a></div>
-  <div class="square-image" onclick=d4click()><a href="./P2.html?SetStorageDeckA=P4"><img id="direction4" src="./images/deactive/de4.png"></a></div>
-  <div class="square-image" onclick=d5click()><a href="./P2.html?SetStorageDeckA=P5"><img id="direction5"  src="./images/deactive/de5.png"></a></div>
-  <div class="square-image" onclick=d6click()><a href="./P2.html?SetStorageDeckA=P6"><img id="direction6" src="./images/deactive/de6.png"></a></div>
-  <div class="square-image" onclick=d7click()><a href="./P2.html?SetStorageDeckA=P7"><img id="direction7" src="./images/deactive/de7.png"></a></div>
-  <div class="square-image" onclick=d8click()><a href="./P2.html?SetStorageDeckA=P8"><img id="direction8" src="./images/deactive/de8.png"></a></div></div>
-        
-  <span class="v3_202">Your lighting direction result :</span>
-  <div class="white-box2"></div>
+      <div class="v3_59 flex justify-center">
+        <div class="button-container">
+          <a href="./P2.html?SetStorageDeckA=S1"
+            ><div id="p1" class="button" onclick="p1click()">Palette 1</div></a
+          >
+          <a href="./P2.html?SetStorageDeckA=S2"
+            ><div id="p2" class="button" onclick="p2click()">Palette 2</div></a
+          >
+          <a href="./P2.html?SetStorageDeckA=S3"
+            ><div id="p3" class="button" onclick="p3click()">Palette 3</div></a
+          >
+          <a href="./P2.html?SetStorageDeckA=S4"
+            ><div id="p4" class="button" onclick="p4click()">Palette 4</div></a
+          >
+          <a href="./P2.html?SetStorageDeckA=S5"
+            ><div id="p5" class="button" onclick="p5click()">Palette 5</div></a
+          >
+          <a href="./P2.html?SetStorageDeckA=S6"
+            ><div id="p6" class="button" onclick="p6click()">Palette 6</div></a
+          >
+          <a href="./P2.html?SetStorageDeckA=S7"
+            ><div id="p7" class="button" onclick="p7click()">Palette 7</div></a
+          >
+          <a href="./P2.html?SetStorageDeckA=S8"
+            ><div id="p8" class="button" onclick="p8click()">Palette 8</div></a
+          >
+        </div>
+      </div>
 
-    <div class="line5"></div>
-        <span class="choosecolor3">เลือกความเร็ว </span>
-    <div class="line6"></div>
-<div class="ani-imagediv1">
-<div class="ani-image1"><img src="./images/turtle.png"></div></div>
-<div class="ani-imagediv2">
-    <div class="ani-image2"><img src="./images/rabbit.png"></div></div>
+      <hr>
+      <div class="choosecolor"
+        >เลือกกลุ่มสี / Select Colors Palettes</div>
+      <hr>
 
-    <div class="slider" >
-        <input id="slider"  type="range" min="1" max="9" onpointerup=up()>
-        <a id="a1" href="./P2.html?SetStorageSpeedDeckA=0.1"></a>
-        <a id="a2" href="./P2.html?SetStorageSpeedDeckA=0.3"></a>
-        <a id="a3" href="./P2.html?SetStorageSpeedDeckA=0.6"></a>
-        <a  id="a4" href="./P2.html?SetStorageSpeedDeckA=0.9"></a>
-        <a  id="a5" href="./P2.html?SetStorageSpeedDeckA=1"></a>
-        <a id="a6" href="./P2.html?SetStorageSpeedDeckA=2"></a>
-        <a id="a7" href="./P2.html?SetStorageSpeedDeckA=3"></a>
-        <a  id="a8" href="./P2.html?SetStorageSpeedDeckA=4"></a>
-        <a  id="a9" href="./P2.html?SetStorageSpeedDeckA=5"></a> 
+      <div class="square-imagediv justify-center">
+        <div class="square-image" onclick="d1click()">
+          <a href="./P2.html?SetStorageDeckA=P1"
+            ><img id="direction1" src="./images/deactive/de1.png"
+          /></a>
+        </div>
+        <div class="square-image" onclick="d2click()">
+          <a href="./P2.html?SetStorageDeckA=P2"
+            ><img id="direction2" src="./images/deactive/de2.png"
+          /></a>
+        </div>
+        <div class="square-image" onclick="d3click()">
+          <a href="./P2.html?SetStorageDeckA=P3"
+            ><img id="direction3" src="./images/deactive/de3.png"
+          /></a>
+        </div>
+        <div class="square-image" onclick="d4click()">
+          <a href="./P2.html?SetStorageDeckA=P4"
+            ><img id="direction4" src="./images/deactive/de4.png"
+          /></a>
+        </div>
+        <div class="square-image" onclick="d5click()">
+          <a href="./P2.html?SetStorageDeckA=P5"
+            ><img id="direction5" src="./images/deactive/de5.png"
+          /></a>
+        </div>
+        <div class="square-image" onclick="d6click()">
+          <a href="./P2.html?SetStorageDeckA=P6"
+            ><img id="direction6" src="./images/deactive/de6.png"
+          /></a>
+        </div>
+        <div class="square-image" onclick="d7click()">
+          <a href="./P2.html?SetStorageDeckA=P7"
+            ><img id="direction7" src="./images/deactive/de7.png"
+          /></a>
+        </div>
+        <div class="square-image" onclick="d8click()">
+          <a href="./P2.html?SetStorageDeckA=P8"
+            ><img id="direction8" src="./images/deactive/de8.png"
+          /></a>
+        </div>
+      </div>
+
+      <div class="v3_202">ทิศทางที่คุณเลือก / Your lighting direction result :</div>
+
+      <hr>
+      <div class="choosecolor"
+        >เลือกความเร็ว</div>
+      <hr>
+
+      <div class="slider">
+        <!-- <input id="slider" type="range" min="1" max="9" onpointerup="up()" /> -->
+        <form class="range">
+        <div class="form-group range__slider">
+            <input type="range" step="500">
+          </div><!--/form-group-->
+        </form>
+
         <!-- <p id="rangeValue">100</p> -->
-                
-        </div>
-        <span class="slow">slow</span>
-        <span class="fast">fast</span>
-        <span id="randomclick" class="random" onclick=random()>RANDOM</span>
+      </div>
+      <span class="slow">slow</span>
+      <span class="fast">fast</span>
+      <span id="randomclick" class="random" onclick="random()">RANDOM</span>
 
-
-
-
-    <span class="v3_281">เมื่อกดตกลงแล้ว ไฟจะเริ่มเล่นตามการตั้งค่าของคุณเป็นเวลา 30 วินาที</span>
-    <div class="v3_52"><div class="v3_53"></div><span class="v3_54" onclick="fadeOutAndChangePage()">ตกลง</span></div>
+      <span class="v3_281"
+        >เมื่อกดตกลงแล้ว ไฟจะเริ่มเล่นตามการตั้งค่าของคุณเป็นเวลา 30
+        วินาที</span
+      >
+      <div class="v3_52">
+        <div class="v3_53"></div>
+        <span class="v3_54" onclick="fadeOutAndChangePage()">ตกลง</span>
+      </div>
+    </div>
     </div>
 
+  </body>
+  <script>
 
-    <input  type="text" name="inputValue" value="$$$GetStorageSpeedDeckA$$$"/>
-    <input  type="text" name="inputValue" value="$$$GetStorageDeckA$$$"/>
-    <input  type="text" name="inputValue" value="$$$GetStoragePlaceDeckA$$$"/>
-    
+class Slider {
+  constructor (rangeElement, valueElement, options) {
+    this.rangeElement = rangeElement
+    this.valueElement = valueElement
+    this.options = options
 
+    // Attach a listener to "change" event
+    this.rangeElement.addEventListener('input', this.updateSlider.bind(this))
+  }
 
+  // Initialize the slider
+  init() {
+    this.rangeElement.setAttribute('min', options.min)
+    this.rangeElement.setAttribute('max', options.max)
+    this.rangeElement.value = options.cur
 
+    this.updateSlider()
+  }
 
-    <div id="randomscence"></div>
-    <!-- ทดลอง <span color="white"></span>current fadetime is $$$GetFadeTime$$$</span>
-    <span color="white"></span>current Sto is $$$GetStorageDeckA$$$</span>
-    <a href="./P2.html?SetStorageDeckA=S11">SetStorageDeckA=S11 seconds</a>
-    <a href="./P2.html?SetStorageDeckA=S12">SetStorageDeckA=S12 seconds</a>
-    <a href="./P2.html?SetStorageDeckA=S13">SetStorageDeckA=S11 seconds</a>
-    <a href="./P2.html?SetStorageDeckA=S14">SetStorageDeckA=S15 seconds</a>
-    <a href="./P2.html?SetFadeTime=7">S5 seconds</a> 
+  // Format the money
+  asMoney(value) {
+    return '$' + parseFloat(value)
+      .toLocaleString('en-US', { maximumFractionDigits: 2 })
+  }
 
-    <span color="white"></span>current Sto is $$$GetStoragePlaceDeckA$$$</span>
+  generateBackground(rangeElement) {   
+    if (this.rangeElement.value === this.options.min) {
+      return
+    }
 
+    let percentage =  (this.rangeElement.value - this.options.min) / (this.options.max - this.options.min) * 100
+    return 'background: linear-gradient(to right, #50299c, #7a00ff ' + percentage + '%, #d3edff ' + percentage + '%, #dee1e2 100%)'
+  }
 
-    <form action="processForm.jsp" method="post" class="checkvalue">
-        <input type="text" name="inputValue" value="$$$GetStoragePlaceDeckA$$$" />
-    </form> -->
-    <!-- <p id="checkclick1" color="white" >ee</p>
-    <p id="checkclick2"></p> -->
-   
-</body>
+  updateSlider (newValue) {
+    this.valueElement.innerHTML = this.asMoney(this.rangeElement.value)
+    this.rangeElement.style = this.generateBackground(this.rangeElement.value)
+  }
+}
+
+let rangeElement = document.querySelector('.range [type="range"]')
+let valueElement = document.querySelector('.range .range__value span') 
+
+let options = {
+  min: 2000,
+  max: 75000,
+  cur: 37500
+}
+
+if (rangeElement) {
+  let slider = new Slider(rangeElement, valueElement, options)
+
+  slider.init()
+}
+  </script>
 </html>
