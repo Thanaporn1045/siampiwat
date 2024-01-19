@@ -6,6 +6,7 @@ body {
   font-family: 'Kanit', sans-serif;
   /*font-family: 'Roboto', sans-serif;*/
   text-align: center;
+  overflow: hidden;
   }
 
 .imghlab {
@@ -490,9 +491,11 @@ margin-top: 5vh;
 
 .iconbar
 {
-/* position: fixed; */
-margin-bottom: 0vh;
-margin-top: 2vh;
-/* margin-left: 2vh;
-margin-right: 2vh; */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
 } 
