@@ -144,10 +144,22 @@ body {
   height: 95px;  
   margin: 4.5px; 
   display: inline-flex;
-  clip-path: inset(0 round 10px);
+
 
 }
 .square-imagediv {
+  display: flex;    
+
+}
+ .square-image2 {
+  width: 80px; 
+  height: 80px;  
+  margin: 10px; 
+  display: inline-flex;
+
+
+} 
+directionresult {
   display: flex;    
 
 }
@@ -444,3 +456,17 @@ margin-top: 5vh;
   opacity: 0;
 }
 
+.confirm{
+
+}
+
+/* .iconbar
+{
+position: fixed;
+bottom: 0;
+width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+} */
