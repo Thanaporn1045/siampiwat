@@ -511,3 +511,13 @@ function d8click() {
     var pagealert7 = document.getElementById('direction7');
     pagealert7.src = "./images/directdeac/7.png" }
 
+    function fadeOutAndChangePage() {
+        // ใส่คลาส hidden เพื่อทำ fade out
+        // document.getElementById('bd').classList.add('hidden');
+    
+        // // รอ 1 วินาที (1000 มิลลิวินาที) แล้วเปลี่ยนหน้า
+        // setTimeout(function() {
+        //   window.location.href = 'P2.html';
+        // }, 1000);
+        window.location.href = 'Count.html';
+      }
