@@ -18,6 +18,7 @@
 
 
 
+
 // สร้างฟังก์ชันเพื่อเปลี่ยนสีปุ่มเป็นสีขาว
 // function changeButtonColor() {
 //     var button = document.getElementById('p1');
@@ -257,7 +258,7 @@ function p3click() {
    
     var pagealert7 = document.getElementById('p7');
   
-    var pagealert8 = document.getElementById('p8');
+    var pagealert8 = document.getElementById('p8');}
    
 function p4click() {
    
@@ -356,227 +357,157 @@ function p8click() {
 function d1click() {
    
     var pagealert1 = document.getElementById('direction1');
-    pagealert1.src = "./images/active/act1.png";
+    pagealert1.src = "./images/directdeac/active/act2.png";
     var pagealert2 = document.getElementById('direction2');
-    pagealert2.src = "./images/deactive/de2.png";
+    pagealert2.src = "./images/directdeac/2.png";
     var pagealert3 = document.getElementById('direction3');
-    pagealert3.src = "./images/deactive/de3.png";
+    pagealert3.src = "./images/directdeac/3.png";
     var pagealert4 = document.getElementById('direction4');
-    pagealert4.src = "./images/deactive/de4.png";
+    pagealert4.src = "./images/directdeac/4.png";
     var pagealert5 = document.getElementById('direction5');
-    pagealert5.src = "./images/deactive/de5.png";
+    pagealert5.src = "./images/directdeac/5.png";
     var pagealert6 = document.getElementById('direction6');
-    pagealert6.src = "./images/deactive/de6.png";
+    pagealert6.src = "./images/directdeac/6.png";
     var pagealert7 = document.getElementById('direction7');
-    pagealert7.src = "./images/deactive/de7.png";
+    pagealert7.src = "./images/directdeac/7.png";
     var pagealert8 = document.getElementById('direction8');
-    pagealert8.src = "./images/deactive/de8.png";
+    pagealert8.src = "./images/directdeac/8.png";
   
 }
 function d2click() {
    
     var pagealert2 = document.getElementById('direction2');
-    pagealert2.src = "./images/active/act2.png";
+    pagealert2.src = "./images/directdeac/active/act1.png";
     var pagealert1 = document.getElementById('direction1');
-    pagealert1.src = "./images/deactive/de1.png";
+    pagealert1.src = "./images/directdeac/1.png";
     var pagealert3 = document.getElementById('direction3');
-    pagealert3.src = "./images/deactive/de3.png";
+    pagealert3.src = "./images/directdeac/3.png";
     var pagealert4 = document.getElementById('direction4');
-    pagealert4.src = "./images/deactive/de4.png";
+    pagealert4.src = "./images/directdeac/4.png";
     var pagealert5 = document.getElementById('direction5');
-    pagealert5.src = "./images/deactive/de5.png";
+    pagealert5.src = "./images/directdeac/5.png";
     var pagealert6 = document.getElementById('direction6');
-    pagealert6.src = "./images/deactive/de6.png";
+    pagealert6.src = "./images/directdeac/6.png";
     var pagealert7 = document.getElementById('direction7');
-    pagealert7.src = "./images/deactive/de7.png";
+    pagealert7.src = "./images/directdeac/7.png";
     var pagealert8 = document.getElementById('direction8');
-    pagealert8.src = "./images/deactive/de8.png";
+    pagealert8.src = "./images/directdeac/8.png";
   
 }
 
 function d3click() {
    
     var pagealert3 = document.getElementById('direction3');
-    pagealert3.src = "./images/active/act3.png";
+    pagealert3.src = "./images/directdeac/active/act3.png";
     var pagealert1 = document.getElementById('direction1');
-    pagealert1.src = "./images/deactive/de1.png";
+    pagealert1.src = "./images/directdeac/1.png";
     var pagealert2 = document.getElementById('direction2');
-    pagealert2.src = "./images/deactive/de2.png";
+    pagealert2.src = "./images/directdeac/2.png";
     var pagealert4 = document.getElementById('direction4');
-    pagealert4.src = "./images/deactive/de4.png";
+    pagealert4.src = "./images/directdeac/4.png";
     var pagealert5 = document.getElementById('direction5');
-    pagealert5.src = "./images/deactive/de5.png";
+    pagealert5.src = "./images/directdeac/5.png";
     var pagealert6 = document.getElementById('direction6');
-    pagealert6.src = "./images/deactive/de6.png";
+    pagealert6.src = "./images/directdeac/6.png";
     var pagealert7 = document.getElementById('direction7');
-    pagealert7.src = "./images/deactive/de7.png";
+    pagealert7.src = "./images/directdeac/7.png";
     var pagealert8 = document.getElementById('direction8');
-    pagealert8.src = "./images/deactive/de8.png";
+    pagealert8.src = "./images/directdeac/8.png";
   
 }
 function d4click() {
    
     var pagealert4 = document.getElementById('direction4');
-    pagealert4.src = "./images/active/act4.png";
+    pagealert4.src = "./images/directdeac/active/act4.png";
     var pagealert1 = document.getElementById('direction1');
-    pagealert1.src = "./images/deactive/de1.png";
+    pagealert1.src = "./images/directdeac/1.png";
     var pagealert2 = document.getElementById('direction2');
-    pagealert2.src = "./images/deactive/de2.png";
+    pagealert2.src = "./images/directdeac/2.png";
     var pagealert3 = document.getElementById('direction3');
-    pagealert3.src = "./images/deactive/de3.png";
+    pagealert3.src = "./images/directdeac/3.png";
     var pagealert5 = document.getElementById('direction5');
-    pagealert5.src = "./images/deactive/de5.png";
+    pagealert5.src = "./images/directdeac/5.png";
     var pagealert6 = document.getElementById('direction6');
-    pagealert6.src = "./images/deactive/de6.png";
+    pagealert6.src = "./images/directdeac/6.png";
     var pagealert7 = document.getElementById('direction7');
-    pagealert7.src = "./images/deactive/de7.png";
+    pagealert7.src = "./images/directdeac/7.png";
     var pagealert8 = document.getElementById('direction8');
-    pagealert8.src = "./images/deactive/de8.png";
+    pagealert8.src = "./images/directdeac/8.png";
   
 }
 function d5click() {
    
     var pagealert5 = document.getElementById('direction5');
-    pagealert5.src = "./images/active/act5.png";
+    pagealert5.src = "./images/directdeac/active/act5.png";
     var pagealert1 = document.getElementById('direction1');
-    pagealert1.src = "./images/deactive/de1.png";
+    pagealert1.src = "./images/directdeac/1.png";
     var pagealert2 = document.getElementById('direction2');
-    pagealert2.src = "./images/deactive/de2.png";
+    pagealert2.src = "./images/directdeac/2.png";
     var pagealert3 = document.getElementById('direction3');
-    pagealert3.src = "./images/deactive/de3.png";
+    pagealert3.src = "./images/directdeac/3.png";
     var pagealert4 = document.getElementById('direction4');
-    pagealert4.src = "./images/deactive/de4.png";
+    pagealert4.src = "./images/directdeac/4.png";
     var pagealert6 = document.getElementById('direction6');
-    pagealert6.src = "./images/deactive/de6.png";
+    pagealert6.src = "./images/directdeac/6.png";
     var pagealert7 = document.getElementById('direction7');
-    pagealert7.src = "./images/deactive/de7.png";
+    pagealert7.src = "./images/directdeac/7.png";
     var pagealert8 = document.getElementById('direction8');
-    pagealert8.src = "./images/deactive/de8.png";
+    pagealert8.src = "./images/directdeac/8.png";
 }
 function d6click() {
    
     var pagealert6 = document.getElementById('direction6');
-    pagealert6.src = "./images/active/act6.png";
+    pagealert6.src = "./images/directdeac/active/6.png";
     var pagealert1 = document.getElementById('direction1');
-    pagealert1.src = "./images/deactive/de1.png";
+    pagealert1.src = "./images/directdeac/1.png";
     var pagealert2 = document.getElementById('direction2');
-    pagealert2.src = "./images/deactive/de2.png";
+    pagealert2.src = "./images/directdeac/2.png";
     var pagealert3 = document.getElementById('direction3');
-    pagealert3.src = "./images/deactive/de3.png";
+    pagealert3.src = "./images/directdeac/3.png";
     var pagealert4 = document.getElementById('direction4');
-    pagealert4.src = "./images/deactive/de4.png";
+    pagealert4.src = "./images/directdeac/4.png";
     var pagealert5 = document.getElementById('direction5');
-    pagealert5.src = "./images/deactive/de5.png";
+    pagealert5.src = "./images/directdeac/5.png";
     var pagealert7 = document.getElementById('direction7');
-    pagealert7.src = "./images/deactive/de7.png";
+    pagealert7.src = "./images/directdeac/7.png";
     var pagealert8 = document.getElementById('direction8');
-    pagealert8.src = "./images/deactive/de8.png";
+    pagealert8.src = "./images/directdeac/8.png";
 }
 function d7click() {
    
     var pagealert7 = document.getElementById('direction7');
-    pagealert7.src = "./images/active/act7.png";
+    pagealert7.src = "./images/directdeac/active/act7.png";
     var pagealert1 = document.getElementById('direction1');
-    pagealert1.src = "./images/deactive/de1.png";
+    pagealert1.src = "./images/directdeac/1.png";
     var pagealert2 = document.getElementById('direction2');
-    pagealert2.src = "./images/deactive/de2.png";
+    pagealert2.src = "./images/directdeac/2.png";
     var pagealert3 = document.getElementById('direction3');
-    pagealert3.src = "./images/deactive/de3.png";
+    pagealert3.src = "./images/directdeac/3.png";
     var pagealert4 = document.getElementById('direction4');
-    pagealert4.src = "./images/deactive/de4.png";
+    pagealert4.src = "./images/directdeac/4.png";
     var pagealert5 = document.getElementById('direction5');
-    pagealert5.src = "./images/deactive/de5.png";
+    pagealert5.src = "./images/directdeac/5.png";
     var pagealert6 = document.getElementById('direction6');
-    pagealert6.src = "./images/deactive/de6.png";
+    pagealert6.src = "./images/directdeac/6.png";
     var pagealert8 = document.getElementById('direction8');
-    pagealert8.src = "./images/deactive/de8.png";
+    pagealert8.src = "./images/directdeac/8.png";
 }
 function d8click() {
    
     var pagealert8 = document.getElementById('direction8');
-    pagealert8.src = "./images/active/act8.png";
+    pagealert8.src = "./images/directdeac/active/act8.png";
     var pagealert1 = document.getElementById('direction1');
-    pagealert1.src = "./images/deactive/de1.png";
+    pagealert1.src = "./images/directdeac/1.png";
     var pagealert2 = document.getElementById('direction2');
-    pagealert2.src = "./images/deactive/de2.png";
+    pagealert2.src = "./images/directdeac/2.png";
     var pagealert3 = document.getElementById('direction3');
-    pagealert3.src = "./images/deactive/de3.png";
+    pagealert3.src = "./images/directdeac/3.png";
     var pagealert4 = document.getElementById('direction4');
-    pagealert4.src = "./images/deactive/de4.png";
+    pagealert4.src = "./images/directdeac/4.png";
     var pagealert5 = document.getElementById('direction5');
-    pagealert5.src = "./images/deactive/de5.png";
+    pagealert5.src = "./images/directdeac/5.png";
     var pagealert6 = document.getElementById('direction6');
-    pagealert6.src = "./images/deactive/de6.png";
+    pagealert6.src = "./images/directdeac/6.png";
     var pagealert7 = document.getElementById('direction7');
-    pagealert7.src = "./images/deactive/de7.png";
-}
+    pagealert7.src = "./images/directdeac/7.png" }
 
-
-
-
-function fadeOutAndChangePage() {
-    // ใส่คลาส hidden เพื่อทำ fade out
-    // document.getElementById('bd2').classList.add('hidden');
-
-    // // รอ 1 วินาที (1000 มิลลิวินาที) แล้วเปลี่ยนหน้า
-    // setTimeout(function() {
-    //   window.location.href = 'count.html';
-    // }, 1000);
-    window.location.href = 'count.html';
-  }
-}
-
-  class Slider {
-    constructor (rangeElement, valueElement, options) {
-      this.rangeElement = rangeElement
-      this.valueElement = valueElement
-      this.options = options
-  
-      // Attach a listener to "change" event
-      this.rangeElement.addEventListener('input', this.updateSlider.bind(this))
-    }
-  
-    // Initialize the slider
-    init() {
-      this.rangeElement.setAttribute('min', options.min)
-      this.rangeElement.setAttribute('max', options.max)
-      this.rangeElement.value = options.cur
-  
-      this.updateSlider()
-    }
-  
-    // Format the money
-    asMoney(value) {
-      return '$' + parseFloat(value)
-        .toLocaleString('en-US', { maximumFractionDigits: 2 })
-    }
-  
-    generateBackground(rangeElement) {   
-      if (this.rangeElement.value === this.options.min) {
-        return
-      }
-  
-      let percentage =  (this.rangeElement.value - this.options.min) / (this.options.max - this.options.min) * 100
-      return 'background: linear-gradient(to right, #50299c, #7a00ff ' + percentage + '%, #d3edff ' + percentage + '%, #dee1e2 100%)'
-    }
-  
-    updateSlider (newValue) {
-      this.valueElement.innerHTML = this.asMoney(this.rangeElement.value)
-      this.rangeElement.style = this.generateBackground(this.rangeElement.value)
-    }
-  }
-  
-  let rangeElement = document.querySelector('.range [type="range"]')
-  let valueElement = document.querySelector('.range .range__value span') 
-  
-  let options = {
-    min: 2000,
-    max: 75000,
-    cur: 37500
-  }
-  
-  if (rangeElement) {
-    let slider = new Slider(rangeElement, valueElement, options)
-  
-    slider.init()
-  }
