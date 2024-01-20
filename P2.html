@@ -46,8 +46,6 @@
 
           <!-- <a  href="" onclick=palette1()><div id="p1" class="button" onclick="p1click()"><img src="./images/palette/Group 44.png"/></div></a> -->
            <a href="./P2.html?SetStorageDeckA=S1P$$$GetStoragePlaceDeckA$$$"><div id="p1" class="button" onclick="p1click()"><img src="./images/palette/Group 44.png"/></div></a> 
-
-
           <a href="./P2.html?SetStorageDeckA=S2P$$$GetStoragePlaceDeckA$$$"><div id="p2" class="button" onclick="p2click()"><img src="./images/palette/Group 81.png"/></div></a>
           <a href="./P2.html?SetStorageDeckA=S3P$$$GetStoragePlaceDeckA$$$"><div id="p3" class="button" onclick="p3click()"><img src="./images/palette/Group 82.png"/></div></a>
           <a href="./P2.html?SetStorageDeckA=S4P$$$GetStoragePlaceDeckA$$$"><div id="p4" class="button" onclick="p4click()"><img src="./images/palette/Group 83.png"/></div></a>
@@ -149,13 +147,22 @@
         >เลือกความเร็ว</div>
       <hr>
 
-       <div class="slider flex justify-center">
+      <main>
+
+        <input type="range" min="0" max="100" value="40" step="5" />
+
+      </main>
+
+
+
+
+       <!-- <div class="slider flex justify-center">
        
         <form class="range">
         <div class="form-group range__slider">
             <input type="range" step="500">
           </div>
-        </form>  </div> 
+        </form>  </div>  -->
 
         <!-- <p id="rangeValue">100</p> -->
 
@@ -181,11 +188,8 @@ var goFS = document.getElementById('goFS');goFS.addEventListener(
 
     </div>
     </div>
-    <div id="usersContainer"></div>
+    
   </body>
-
-
-
 
 <script>
 function palette1() {
