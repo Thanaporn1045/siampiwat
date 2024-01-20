@@ -206,282 +206,152 @@ if (myElement.value == 1) {
 function p1click() {
    
     var pagealert1 = document.getElementById('p1');
-    pagealert1.style.backgroundColor = 'white';
-    pagealert1.style.opacity = 1;
-    pagealert1.style.color = "black";
+
     var pagealert2 = document.getElementById('p2');
-    pagealert2.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert2.style.opacity = 0.3;
-    pagealert2.style.color = 'rgb(241, 232, 232)';
+ 
     var pagealert3 = document.getElementById('p3');
-    pagealert3.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert3.style.opacity = 0.3;
-    pagealert3.style.color = 'rgb(241, 232, 232)';
+
     var pagealert4 = document.getElementById('p4');
-    pagealert4.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert4.style.opacity = 0.3;
-    pagealert4.style.color = 'rgb(241, 232, 232)';
+   
     var pagealert5 = document.getElementById('p5');
-    pagealert5.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert5.style.opacity = 0.3;
-    pagealert5.style.color = 'rgb(241, 232, 232)';
+ 
     var pagealert6 = document.getElementById('p6');
-    pagealert6.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert6.style.opacity = 0.3;
-    pagealert6.style.color = 'rgb(241, 232, 232)';
+
     var pagealert7 = document.getElementById('p7');
-    pagealert7.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert7.style.opacity = 0.3;
-    pagealert7.style.color = 'rgb(241, 232, 232)';
+   
     var pagealert8 = document.getElementById('p8');
-    pagealert8.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert8.style.opacity = 0.3;
-    pagealert8.style.color = 'rgb(241, 232, 232)';
+   
 }
 function p2click() {
    
     var pagealert2 = document.getElementById('p2');
-    pagealert2.style.backgroundColor = 'white';
-    pagealert2.style.opacity = 1;
-    pagealert2.style.color = "black";
+
     var pagealert1 = document.getElementById('p1');
-    pagealert1.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert1.style.opacity = 0.3;
-    pagealert1.style.color = 'rgb(241, 232, 232)';
+ 
     var pagealert3 = document.getElementById('p3');
-    pagealert3.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert3.style.opacity = 0.3;
-    pagealert3.style.color = 'rgb(241, 232, 232)';
+
     var pagealert4 = document.getElementById('p4');
-    pagealert4.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert4.style.opacity = 0.3;
-    pagealert4.style.color = 'rgb(241, 232, 232)';
+
     var pagealert5 = document.getElementById('p5');
-    pagealert5.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert5.style.opacity = 0.3;
-    pagealert5.style.color = 'rgb(241, 232, 232)';
+  
     var pagealert6 = document.getElementById('p6');
-    pagealert6.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert6.style.opacity = 0.3;
-    pagealert6.style.color = 'rgb(241, 232, 232)';
+
     var pagealert7 = document.getElementById('p7');
-    pagealert7.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert7.style.opacity = 0.3;
-    pagealert7.style.color = 'rgb(241, 232, 232)';
+
     var pagealert8 = document.getElementById('p8');
-    pagealert8.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert8.style.opacity = 0.3;
-    pagealert8.style.color = 'rgb(241, 232, 232)';
+ 
 }
 function p3click() {
    
     var pagealert3 = document.getElementById('p3');
-    pagealert3.style.backgroundColor = 'white';
-    pagealert3.style.opacity = 1;
-    pagealert3.style.color = "black";
+   
     var pagealert1 = document.getElementById('p1');
-    pagealert1.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert1.style.opacity = 0.3;
-    pagealert1.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert2 = document.getElementById('p2');
-    pagealert2.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert2.style.opacity = 0.3;
-    pagealert2.style.color = 'rgb(241, 232, 232)';
+   
     var pagealert4 = document.getElementById('p4');
-    pagealert4.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert4.style.opacity = 0.3;
-    pagealert4.style.color = 'rgb(241, 232, 232)';
+  
     var pagealert5 = document.getElementById('p5');
-    pagealert5.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert5.style.opacity = 0.3;
-    pagealert5.style.color = 'rgb(241, 232, 232)';
+   
     var pagealert6 = document.getElementById('p6');
-    pagealert6.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert6.style.opacity = 0.3;
-    pagealert6.style.color = 'rgb(241, 232, 232)';
+   
     var pagealert7 = document.getElementById('p7');
-    pagealert7.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert7.style.opacity = 0.3;
-    pagealert7.style.color = 'rgb(241, 232, 232)';
+  
     var pagealert8 = document.getElementById('p8');
-    pagealert8.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert8.style.opacity = 0.3;
-    pagealert8.style.color = 'rgb(241, 232, 232)';
-}
+   
 function p4click() {
    
     var pagealert4 = document.getElementById('p4');
-    pagealert4.style.backgroundColor = 'white';
-    pagealert4.style.opacity = 1;
-    pagealert4.style.color = "black";
+ 
     var pagealert1 = document.getElementById('p1');
-    pagealert1.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert1.style.opacity = 0.3;
-    pagealert1.style.color = 'rgb(241, 232, 232)';
+  
     var pagealert3 = document.getElementById('p3');
-    pagealert3.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert3.style.opacity = 0.3;
-    pagealert3.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert2 = document.getElementById('p2');
-    pagealert2.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert2.style.opacity = 0.3;
-    pagealert2.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert5 = document.getElementById('p5');
-    pagealert5.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert5.style.opacity = 0.3;
-    pagealert5.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert6 = document.getElementById('p6');
-    pagealert6.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert6.style.opacity = 0.3;
-    pagealert6.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert7 = document.getElementById('p7');
-    pagealert7.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert7.style.opacity = 0.3;
-    pagealert7.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert8 = document.getElementById('p8');
-    pagealert8.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert8.style.opacity = 0.3;
-    pagealert8.style.color = 'rgb(241, 232, 232)';
+   
 }
 function p5click() {
    
     var pagealert5 = document.getElementById('p5');
-    pagealert5.style.backgroundColor = 'white';
-    pagealert5.style.opacity = 1;
-    pagealert5.style.color = "black";
+    
     var pagealert1 = document.getElementById('p1');
-    pagealert1.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert1.style.opacity = 0.3;
-    pagealert1.style.color = 'rgb(241, 232, 232)';
+   
     var pagealert3 = document.getElementById('p3');
-    pagealert3.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert3.style.opacity = 0.3;
-    pagealert3.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert4 = document.getElementById('p4');
-    pagealert4.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert4.style.opacity = 0.3;
-    pagealert4.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert2 = document.getElementById('p2');
-    pagealert2.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert2.style.opacity = 0.3;
-    pagealert2.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert6 = document.getElementById('p6');
-    pagealert6.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert6.style.opacity = 0.3;
-    pagealert6.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert7 = document.getElementById('p7');
-    pagealert7.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert7.style.opacity = 0.3;
-    pagealert7.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert8 = document.getElementById('p8');
-    pagealert8.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert8.style.opacity = 0.3;
-    pagealert8.style.color = 'rgb(241, 232, 232)';
+    
 }
 function p6click() {
    
     var pagealert6 = document.getElementById('p6');
-    pagealert6.style.backgroundColor = 'white';
-    pagealert6.style.opacity = 1;
-    pagealert6.style.color = "black";
+    
     var pagealert1 = document.getElementById('p1');
-    pagealert1.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert1.style.opacity = 0.3;
-    pagealert1.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert3 = document.getElementById('p3');
-    pagealert3.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert3.style.opacity = 0.3;
-    pagealert3.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert4 = document.getElementById('p4');
-    pagealert4.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert4.style.opacity = 0.3;
-    pagealert4.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert5 = document.getElementById('p5');
-    pagealert5.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert5.style.opacity = 0.3;
-    pagealert5.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert2 = document.getElementById('p2');
-    pagealert2.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert2.style.opacity = 0.3;
-    pagealert2.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert7 = document.getElementById('p7');
-    pagealert7.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert7.style.opacity = 0.3;
-    pagealert7.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert8 = document.getElementById('p8');
-    pagealert8.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert8.style.opacity = 0.3;
-    pagealert8.style.color = 'rgb(241, 232, 232)';
-}
+    
 function p7click() {
    
     var pagealert7 = document.getElementById('p7');
-    pagealert7.style.backgroundColor = 'white';
-    pagealert7.style.opacity = 1;
-    pagealert7.style.color = "black";
+    
     var pagealert1 = document.getElementById('p1');
-    pagealert1.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert1.style.opacity = 0.3;
-    pagealert1.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert3 = document.getElementById('p3');
-    pagealert3.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert3.style.opacity = 0.3;
-    pagealert3.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert4 = document.getElementById('p4');
-    pagealert4.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert4.style.opacity = 0.3;
-    pagealert4.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert5 = document.getElementById('p5');
-    pagealert5.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert5.style.opacity = 0.3;
-    pagealert5.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert6 = document.getElementById('p6');
-    pagealert6.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert6.style.opacity = 0.3;
-    pagealert6.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert2 = document.getElementById('p2');
-    pagealert2.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert2.style.opacity = 0.3;
-    pagealert2.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert8 = document.getElementById('p8');
-    pagealert8.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert8.style.opacity = 0.3;
-    pagealert8.style.color = 'rgb(241, 232, 232)';
+    
 }
 function p8click() {
    
     var pagealert8 = document.getElementById('p8');
-    pagealert8.style.backgroundColor = 'white';
-    pagealert8.style.opacity = 1;
-    pagealert8.style.color = "black";
+    
     var pagealert1 = document.getElementById('p1');
-    pagealert1.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert1.style.opacity = 0.3;
-    pagealert1.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert3 = document.getElementById('p3');
-    pagealert3.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert3.style.opacity = 0.3;
-    pagealert3.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert4 = document.getElementById('p4');
-    pagealert4.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert4.style.opacity = 0.3;
-    pagealert4.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert5 = document.getElementById('p5');
-    pagealert5.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert5.style.opacity = 0.3;
-    pagealert5.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert6 = document.getElementById('p6');
-    pagealert6.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert6.style.opacity = 0.3;
-    pagealert6.style.color = 'rgb(241, 232, 232)';
+   
     var pagealert7 = document.getElementById('p7');
-    pagealert7.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert7.style.opacity = 0.3;
-    pagealert7.style.color = 'rgb(241, 232, 232)';
+    
     var pagealert2 = document.getElementById('p2');
-    pagealert2.style.backgroundColor = 'rgb(103, 101, 101)';
-    pagealert2.style.opacity = 0.3;
-    pagealert2.style.color = 'rgb(241, 232, 232)';
+    
 }
 function d1click() {
    
