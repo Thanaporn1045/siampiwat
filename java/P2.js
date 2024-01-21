@@ -9,36 +9,36 @@ function buttonUp() {
     window.location.href = 'Count.html';
 }
 
+window.addEventListener("orientationchange", function() {
+    setTimeout(function(){
+        window.scrollTo(0, 1);
+    }, 0);
+});
 
 
+///////////////// สำหรับรันเวลาไม่ได้แตะหน้าจอ ตั้งเวลาไว้ หนึ่งนาทีครึ่ง///////////////////////////
+function randomscencewhennoonetouch() {
+    var pagealert1 = document.getElementById('randomscence');
+    var link = document.createElement('a');
+    var randomNumber2 = Math.floor(Math.random() * 5) + 1;
+    link.href = `./P2.html?SetStorageDeckA=S9P${randomNumber2}`;
+    pagealert1.appendChild(link);
+    setTimeout(function() {
+        link.click();
+    }, 1000);
+}
+let touchedscreen = false;
+document.addEventListener('touchstart', function() {
+    touchedscreen = true;
+});
 
-// function randomscencewhennoonetouch() {
-//     var pagealert1 = document.getElementById('randomscence');
-//     var link = document.createElement('a');
-//     var randomNumber2 = Math.floor(Math.random() * 8) + 1;
-//     link.href = `./P2.html?SetStorageDeckA=S9P${randomNumber2}`;
-//     pagealert1.appendChild(link);
-//     setTimeout(function() {
-//         link.click();
-//     }, 1000);
-// }
-
-
-// let touchedscreen = false;
-
-// // เพิ่ม event listener สำหรับเหตุการณ์ ontouchstart
-// document.addEventListener('touchstart', function() {
-//     touchedscreen = true;
-// });
-
-// // ตั้งเวลา 10 วินาที
-// setTimeout(function() {
-//     // ตรวจสอบว่าไม่มีการแตะหน้าจอไอแพด
-//     if (!touchedscreen) {
-//         randomscencewhennoonetouch();
-//     }
-// }, 180000);
-
+setTimeout(function() {
+    // ตรวจสอบว่าไม่มีการแตะหน้าจอไอแพด
+    if (!touchedscreen) {
+        randomscencewhennoonetouch();
+    }
+}, 5000);
+///////////////// สำหรับรันเวลาไม่ได้แตะหน้าจอ ตั้งเวลาไว้ หนึ่งนาทีครึ่ง///////////////////////////
 
 
 

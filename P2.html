@@ -25,6 +25,7 @@
     <!------------------------------------------------------ fullscreen ------------------------------------------->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   </head>
   <body id="bd2">
     
@@ -107,14 +108,14 @@
 
 
 
-
+<!-- 
       <div class="v3_202">ทิศทางที่คุณเลือก / Your lighting direction result :</div>
       <div class="directionresult flex justify-center">
       <div class="square-image2"><img src="./images/directdeac/active/act1.png"/></div>
       <div class="square-image2"><img src="./images/directdeac/active/act1.png"/></div>
       <div class="square-image2"><img src="./images/directdeac/active/act1.png"/></div>
       <div class="square-image2"><img src="./images/directdeac/active/act1.png"/></div>
-      <div class="square-image2"><img src="./images/directdeac/active/act1.png"/></div></div>
+      <div class="square-image2"><img src="./images/directdeac/active/act1.png"/></div></div> -->
 
       <hr>
       <div class="choosecolor"
@@ -142,6 +143,7 @@
     </div>
     </div>
     <div class="iconbar flex justify-center" ><img  src="./css/SiamPiwat/siamicon.png"></div>
+    <div id="randomscence"></div>
   </body>
 
 <script>
@@ -172,18 +174,24 @@
 function clickC(num){
     Ccolor = num; 
     console.log(Cpattern + ' ' + Ccolor + ' ' + Cspeed)
+
+    /////////////////////////////dec///////////////////////////////
     var buttons = document.querySelectorAll('.button');
     buttons.forEach(button => {
         button.classList.remove('clicked');
     });
     var clickedButton = document.getElementById('p' + num);
     clickedButton.classList.add('clicked');
+    /////////////////////////////dec///////////////////////////////
+
     submitme()
 }
 
 function clickT(num){
     Cpattern = num; 
     console.log(Cpattern + ' ' + Ccolor + ' ' + Cspeed)
+
+    /////////////////////////////dec///////////////////////////////
     var images = document.querySelectorAll('.square-image');
     for (var i = 0; i < images.length; i++) {
     var image = images[i].getElementsByTagName('img')[0];
@@ -198,6 +206,8 @@ function clickT(num){
             var resultImage = resultImages[i].getElementsByTagName('img')[0];
             resultImage.src = "./images/directdeac/active/act" + num + ".png";
         }    
+  /////////////////////////////dec///////////////////////////////
+
     submitme()
 }
 
@@ -240,7 +250,6 @@ function resetting(color,pattern,speed){
   document.getElementById("direction"+pattern).classList.add("choosing");
 
 }
-
 
 </script> 
 </html>
