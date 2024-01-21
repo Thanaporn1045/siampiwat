@@ -89,16 +89,6 @@ function setCircleDasharray() {
     .getElementById("base-timer-path-remaining")
     .setAttribute("stroke-dasharray", circleDasharray);
 }
-function fadeOutAndChangePage() {
-  // ใส่คลาส hidden เพื่อทำ fade out
-  // document.getElementById('bd3').classList.add('hidden');
-
-  // // รอ 1 วินาที (1000 มิลลิวินาที) แล้วเปลี่ยนหน้า
-  // setTimeout(function() {
-  //   window.location.href = 'P2.html';
-  // }, 1000);
-  window.location.href = 'P2.html';
-}
 
 function buttonDown() {
   var confirmImg = document.querySelector('.comfirmimg');
@@ -108,5 +98,6 @@ function buttonDown() {
 function buttonUp() {
   var confirmImg = document.querySelector('.comfirmimg');
   confirmImg.classList.remove('clicked');
+  window.location.href = 'index.html';
 }
 

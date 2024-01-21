@@ -37,15 +37,19 @@ height: 60px;
 }
 
 .comfirmimg {
+ 
   width: 100%;
   cursor: pointer;
   transition: transform 0.3s ease; 
 }
 
 .comfirmimg.clicked {
+  
   transform: scale(0.9); 
 }
 
 .comfirmimg img {
+  margin-top: 8vh;
   max-width: 100%;
   height: auto;}
+

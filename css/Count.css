@@ -78,8 +78,8 @@ body {
    display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -45vh;
-  font-size: 300px;
+  margin-top: -43vh;
+  font-size: 280px;
 
   color: rgba(162, 132, 73, 1);
 }
@@ -93,7 +93,7 @@ body {
 }
 .thank{
 
-  margin-top: 8vh;
+  margin-top: 12vh;
   margin-bottom: 7vh;
   display: flex;
   align-items: center;
