@@ -231,15 +231,6 @@ function submitme(){
 
 }
 
-function palette1() {
-  const xhr = new XMLHttpRequest();
-  const targetPage = "./P2.html";
-  const storage = $$$GetStorageDeckA$$$;
-  const place = $$$GetStoragePlaceDeckA$$$;  
-  const speed = $$$GetStorageSpeedDeckA$$$;    
-  xhr.open("GET", targetPage);
-  xhr.onload = function () {window.location.href = `${targetPage}?SetStorageDeckA=S1P${place}&&SetStorageSpeedDeckA=${speed}`;};
-  xhr.send();
-}
+
 </script> 
 </html>

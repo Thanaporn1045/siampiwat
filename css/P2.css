@@ -178,7 +178,9 @@ body {
   text-align: left;
    
 }
-
+.comfirmimg {
+  width: 100%;
+}
 .fast {
   text-align: right;
 }
@@ -187,6 +189,7 @@ body {
   margin-bottom: 1vh;
   margin-top: 2vh;
   text-align: center;
+  font-size: 2em;
 }
 .v3_59 {
   margin-top: 2vh;
