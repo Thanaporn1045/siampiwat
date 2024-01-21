@@ -99,3 +99,14 @@ function fadeOutAndChangePage() {
   // }, 1000);
   window.location.href = 'P2.html';
 }
+
+function buttonDown() {
+  var confirmImg = document.querySelector('.comfirmimg');
+  confirmImg.classList.add('clicked');
+}
+
+function buttonUp() {
+  var confirmImg = document.querySelector('.comfirmimg');
+  confirmImg.classList.remove('clicked');
+}
+

@@ -18,14 +18,7 @@ background-position-x: 25px;
   z-index: 2;
 
 } */
-.clickforstart
-{
-  /* position: relative;
-  text-align: center;
-  margin-top: 850px; */
-  /* z-index: 1; */
-  
-}
+
 .iconbar
 {
   position: fixed;
@@ -43,3 +36,16 @@ height: 60px;
   background-color: rgba(58, 45, 75, 1);
 }
 
+.comfirmimg {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+.comfirmimg.clicked {
+  transform: scale(0.9); 
+}
+
+.comfirmimg img {
+  max-width: 100%;
+  height: auto;}

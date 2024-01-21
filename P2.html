@@ -36,7 +36,7 @@
         </div>
         <hr>
       <div class="choosecolor"
-        >เลือกกลุ่มสี / Select Colors Palettes</div>
+        >1. เลือกกลุ่มสี / Select Colors Palettes</div>
       <hr>
     
     
@@ -44,12 +44,10 @@
       <div class="v3_59 flex justify-center">
         <div class="button-container flex flex-row flex-wrap">
 
-          <!-- <a  href="" onclick=palette1()><div id="p1" class="button" onclick="p1click()"><img src="./images/palette/Group 44.png"/></div> </a> -->
             <div id="p1" class="button basis-1/4" onclick="clickC(1)"><img src="./images/palette/1.png"/></div>
             <div id="p2" class="button basis-1/4" onclick="clickC(2)"><img src="./images/palette/2.png"/></div>
             <div id="p3" class="button basis-1/4" onclick="clickC(3)"><img src="./images/palette/3.png"/></div>
             <div id="p4" class="button basis-1/4" onclick="clickC(4)"><img src="./images/palette/4.png"/></div>
-
             <div id="p5" class="button  basis-1/4 " onclick="clickC(5)"><img src="./images/palette/5.png"/></div>
             <div id="p6" class="button  basis-1/4" onclick="clickC(6)"><img src="./images/palette/6.png"/></div> 
             <div id="p7" class="button  basis-1/4" onclick="clickC(7)"><img src="./images/palette/7.png"/></div> 
@@ -69,7 +67,7 @@
 
       <hr>
       <div class="choosecolor"
-        >เลือกกลุ่มสี / Select Colors Palettes</div>
+        >2. เลือกทิศทาง / Select Directions</div>
       <hr>
 
       <div class="square-imagediv justify-center">
@@ -129,42 +127,19 @@
 
       </main>
 
-
-
-
-       <!-- <div class="slider flex justify-center">
-       
-        <form class="range">
-        <div class="form-group range__slider">
-            <input type="range" step="500">
-          </div>
-        </form>  </div>  -->
-
-        <!-- <p id="rangeValue">100</p> -->
-
-        
-
       <div class="maininput">
         <div class="slow">slow</div>
         <div class="fast">fast</div>
       </div>
 
-      <!-- <button id="goFS">Go fullscreen</button>
-      <script>
-var goFS = document.getElementById('goFS');goFS.addEventListener(
-  'click',
-  function () {
-    document.body.requestFullscreen();
-  },
-  false,);
-  </script> -->
+     
+ 
 
-        <div class="comfirmimg flex justify-center" onclick="submitme()"><img src="./images/confirm.png"></div>
-        <div class="iconbar flex justify-center"><img  src="./css/SiamPiwat/siamicon.png"></div>
+        <div class="comfirmimg flex justify-center" onclick=submitme() onpointerdown=buttonDown() onpointerup=buttonUp()><img src="./images/confirm.png"></div>
 
     </div>
     </div>
-    
+    <div class="iconbar flex justify-center" ><img  src="./css/SiamPiwat/siamicon.png"></div>
   </body>
 
 <script>
@@ -193,12 +168,36 @@ var goFS = document.getElementById('goFS');goFS.addEventListener(
 function clickC(num){
     Ccolor = num; 
     console.log(Cpattern + ' ' + Ccolor + ' ' + Cspeed)
+    var buttons = document.querySelectorAll('.button');
+    buttons.forEach(button => {
+        button.classList.remove('clicked');
+    });
+    var clickedButton = document.getElementById('p' + num);
+    clickedButton.classList.add('clicked');
     submitme()
 }
 
 function clickT(num){
     Cpattern = num; 
     console.log(Cpattern + ' ' + Ccolor + ' ' + Cspeed)
+    var images = document.querySelectorAll('.square-image');
+    for (var i = 0; i < images.length; i++) {
+    var image = images[i].getElementsByTagName('img')[0];
+    var imageId = image.id;
+    if (num == imageId.substring(imageId.length - 1)) {
+        image.src = "./images/directdeac/active/act" + num + ".png";
+    } else {
+        image.src = "./images/directdeac/" + imageId.substring(imageId.length - 1) + ".png";
+    }
+  } var resultImages = document.querySelectorAll('.square-image2');
+        for (var i = 0; i < resultImages.length; i++) {
+            var resultImage = resultImages[i].getElementsByTagName('img')[0];
+            resultImage.src = "./images/directdeac/active/act" + num + ".png";
+        }    
+
+
+
+
     submitme()
 }
 
@@ -219,6 +218,7 @@ function submitme(){
   // xhr.onload = function () { window.location.href = `${targetPage}?SetStorageDeckA=S${storage}P${place}&SetStorageSpeedDeckA=${speed}&pattern=${place}&color=${storage}`; };
   // xhr.send();
   var url = `http://127.0.0.1/P2.html?SetStorageDeckA=S${storage}P${place}&SetStorageSpeedDeckA=${speed}&pattern=${place}&color=${storage}`;
+  // var url = `http://192.168.0.101/P2.html?SetStorageDeckA=S${storage}P${place}&SetStorageSpeedDeckA=${speed}&pattern=${place}&color=${storage}`;
   console.log(url)
   fetch(url).then(function(response) {
   return response;

@@ -28,7 +28,7 @@ body {
    color: rgba(242,242,242,1);
   text-align: center;
   font-size: 1.8em;
-  margin: 10px 10px ;
+  margin: 1px 1px ;
 }
 .choosecolor2 {
   width: 587px;
@@ -70,8 +70,8 @@ body {
 
 
 .square-image {
-  width: 95px; 
-  height: 95px;  
+  width: 87px; 
+  height: 87px;  
   margin: 4.5px; 
   display: inline-flex;
 
@@ -83,8 +83,8 @@ body {
 
 }
  .square-image2 {
-  width: 70px; 
-  height: 70px;  
+  width: 60px; 
+  height: 60px;  
   margin: 10px; 
   display: inline-flex;
   margin-bottom: 2vh;
@@ -93,6 +93,7 @@ body {
 } 
 .directionresult {
   display: flex;
+  margin-top: 1vh;
 }
 .ani-image1 {
   width: 100%; 
@@ -178,18 +179,16 @@ body {
   text-align: left;
    
 }
-.comfirmimg {
-  width: 100%;
-}
+
 .fast {
   text-align: right;
 }
 .v3_202 {
   color: rgba(103,102,102,1);
   margin-bottom: 1vh;
-  margin-top: 2vh;
+  margin-top: 1vh;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .v3_59 {
   margin-top: 2vh;
@@ -200,19 +199,10 @@ body {
 }
 
 .maininput{
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
-.button-container {
-  
- 
-  /* grid-template-columns: repeat(4, 178px);
-  grid-template-rows: repeat(2, 50px);
-  grid-template-rows: repeat(1, 50px) 60px 70px;
-  gap: 30px; */
-  
-  
-}
+
 
 .button {
   /* width: 200px;
@@ -224,6 +214,17 @@ body {
   justify-content: center; */
   padding: 5px 5px;
 
+}
+/* .button img {
+    opacity: 0.7;
+} */
+
+/* เมื่อถูกคลิก, กำหนด Opacity เป็น 1 */
+.button.clicked img {
+    opacity: 1;
+    /* border: 5px solid rgba(162, 132, 72, 1); */
+     border: 5px solid white; 
+    border-radius: 15px;
 }
 
 
@@ -274,10 +275,7 @@ body {
   opacity: 0;
 }
 
-.comfirmimg{
-  margin-top: 1vh;
 
-}
 
 .iconbar
 {
@@ -290,28 +288,27 @@ body {
   align-items: center;
   height: 60px;
   text-align: center;
-  /* margin-left: 0; */
-  /* margin-right: auto; */
+  margin-left: 0; 
+ margin-right: auto;
 } 
 
 
 
- */
 
  
  
  main {
    display: flex;
    flex-direction: column;
-   gap: 2.2em;
-   padding: 1em 0;
+   /* gap: 2.2em; */
+   /* padding: 1em 0; */
  }
  
 
  
  /* === range theme and appearance === */
  input[type="range"] {
-  margin-top: 3vh;
+  margin-top: 2vh;
    font-size: 1.5rem;
    width: 12.5em;
  } 
@@ -416,3 +413,16 @@ body {
  }
 
 
+ .comfirmimg {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+.comfirmimg.clicked {
+  transform: scale(0.9); 
+}
+
+.comfirmimg img {
+  max-width: 100%;
+  height: auto;}

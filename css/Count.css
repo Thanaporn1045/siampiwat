@@ -18,9 +18,9 @@ body {
   
   }
   .imghlab {
-    width: 40%;
+    width: 35%;
     text-align: center;
-    margin-top: 8vh;
+    margin-top: 5vh;
     margin-bottom: 5vh;
     }
 
@@ -78,7 +78,7 @@ body {
    display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -41vh;
+  margin-top: -45vh;
   font-size: 300px;
 
   color: rgba(162, 132, 73, 1);
@@ -87,13 +87,13 @@ body {
   display: flex;
  align-items: center;
  justify-content: center;
- margin-top: -10vh;
+ margin-top: -12vh;
  font-size: 70px;
  color: rgba(162, 132, 73, 1);
 }
 .thank{
 
-  margin-top: 15vh;
+  margin-top: 8vh;
   margin-bottom: 7vh;
   display: flex;
   align-items: center;
@@ -118,6 +118,16 @@ align-items: center;
 height: 60px;
 }
 
-.comfirmimg{
-  /* margin-top: -40vh;*/
-} 
+.comfirmimg {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+.comfirmimg.clicked {
+  transform: scale(0.9); 
+}
+
+.comfirmimg img {
+  max-width: 100%;
+  height: auto;}

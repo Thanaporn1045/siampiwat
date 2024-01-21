@@ -1,69 +1,13 @@
-// window.addEventListener('load', function() {
-//     var buttonElement = document.querySelector('#tt .button');
+function buttonDown() {
+    var confirmImg = document.querySelector('.comfirmimg');
+    confirmImg.classList.add('clicked');
+}
 
-//     // ตรวจสอบว่าอ็อบเจ็กต์ที่ค้นหามีค่าเป็น null หรือไม่
-//     if (buttonElement !== null) {
-//         // ตรวจสอบว่า buttonElement มี property 'style' หรือไม่
-//         if (buttonElement.style !== undefined) {
-//             // ตั้งค่าสีพื้นหลังของปุ่ม
-//             buttonElement.style.backgroundColor = 'blue';
-//         } else {
-//             console.error('Property "style" is undefined');
-//         }
-//     } else {
-//         console.error('Element not found');
-//     }
-// });
-
-
-
-
-
-// สร้างฟังก์ชันเพื่อเปลี่ยนสีปุ่มเป็นสีขาว
-// function changeButtonColor() {
-//     var button = document.getElementById('p1');
-    
-//     button.style.backgroundColor = 'white';
-//     // บันทึกสถานะใน localStorage
-//     localStorage.setItem('buttonColor', 'white');
-// }
-
-// // สร้างฟังก์ชันเพื่อรีเซ็ตสีปุ่มกลับไปเป็นสีดำ
-// function resetButtonColor() {
-//     var button = document.getElementById('p1');
-//     button.style.backgroundColor = 'black';
-//     // บันทึกสถานะใน localStorage
-//     localStorage.setItem('buttonColor', 'black');
-// }
-
-// // สร้างฟังก์ชันเมื่อคลิกที่ปุ่ม
-// function handleClick() {
-//     changeButtonColor();
-//     // ทำสิ่งที่คุณต้องการเมื่อคลิกปุ่ม, เช่น การเปลี่ยนหน้า
-//     // ตัวอย่าง: window.location.href = 'yourNewPage.html';
-// }
-
-// // เช็คสถานะที่บันทึกไว้ใน localStorage เมื่อโหลดหน้า
-// document.addEventListener('DOMContentLoaded', function() {
-//     var storedColor = localStorage.getItem('buttonColor');
-//     if (storedColor === 'white') {
-//         // ถ้าสีใน localStorage เป็นสีขาว ให้เปลี่ยนสีปุ่มเป็นสีขาว
-//         changeButtonColor();
-//     }
-// });
-
-// // เพิ่ม event listener สำหรับเหตุการณ์ onclick ที่ปุ่ม
-// document.getElementById('p1').addEventListener('click', function() {
-//     handleClick();
-//     setTimeout(function() {
-//         resetButtonColor();
-//     }, 1000); // 1000 มิลลิวินาที (1 วินาที) หลังจากที่คลิก
-// });
-
-
-
-
-
+function buttonUp() {
+    var confirmImg = document.querySelector('.comfirmimg');
+    confirmImg.classList.remove('clicked');
+    window.location.href = 'Count.html';
+}
 
 
 
@@ -78,7 +22,6 @@
 //         link.click();
 //     }, 1000);
 // }
-
 
 
 // let touchedscreen = false;
@@ -354,7 +297,7 @@ function p8click() {
     var pagealert2 = document.getElementById('p2');
     
 }
-function d1click() {
+function k() {
    
     var pagealert1 = document.getElementById('direction1');
     pagealert1.src = "./images/directdeac/active/act2.png";
@@ -511,13 +454,9 @@ function d8click() {
     var pagealert7 = document.getElementById('direction7');
     pagealert7.src = "./images/directdeac/7.png" }
 
-    function fadeOutAndChangePage() {
-        // ใส่คลาส hidden เพื่อทำ fade out
-        // document.getElementById('bd').classList.add('hidden');
-    
-        // // รอ 1 วินาที (1000 มิลลิวินาที) แล้วเปลี่ยนหน้า
-        // setTimeout(function() {
-        //   window.location.href = 'P2.html';
-        // }, 1000);
-        window.location.href = 'Count.html';
-      }
+    // function fadeOutAndChangePage() {
+    //     document.getElementById('bd').classList.add('hidden');
+    //     setTimeout(function() {
+    //         window.location.href = 'Count.html';
+    //     }, 1000);
+    //   }
