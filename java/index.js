@@ -41,5 +41,17 @@ setTimeout(function() {
   if (!touchedscreen) {
       randomscencewhennoonetouch();
   }
-}, 5000);
+}, 90000);
+
+
+let touchedscreen2 = false;
+document.addEventListener('touch', function() {
+    touchedscreen2 = true;
+});
+setTimeout(function() {
+    // ตรวจสอบว่าไม่มีการแตะหน้าจอไอแพด
+    if (!touchedscreen2) {
+        randomscencewhennoonetouch();
+    }
+}, 90000);
 ///////////////// สำหรับรันเวลาไม่ได้แตะหน้าจอ ตั้งเวลาไว้ หนึ่งนาทีครึ่ง///////////////////////////
