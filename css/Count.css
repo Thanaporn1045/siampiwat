@@ -3,6 +3,13 @@
   font-family: 'DBonUma'; 
   src: url('./DBonUma/DB OnUma Med v3.2.ttf') format('truetype');
 }
+html{
+touch-action: none;
+overscroll-behavior: none;
+touch-action: pan-y; 
+
+}
+
 body {
   margin: 0;
   padding: 0;
