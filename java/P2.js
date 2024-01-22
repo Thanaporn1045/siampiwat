@@ -20,8 +20,8 @@ window.addEventListener("orientationchange", function() {
 function randomscencewhennoonetouch() {
     var pagealert1 = document.getElementById('randomscence');
     var link = document.createElement('a');
-    var randomNumber2 = Math.floor(Math.random() * 5) + 1;
-    link.href = `./P2.html?SetStorageDeckA=S9P${randomNumber2}`;
+    var randomNumber2 = Math.floor(Math.random() * 6) + 1;
+    link.href = `./P2.html?SetStorageDeckA=S17P${randomNumber2}`;
     pagealert1.appendChild(link);
     setTimeout(function() {
         link.click();
@@ -460,3 +460,53 @@ function d8click() {
     //         window.location.href = 'Count.html';
     //     }, 1000);
     //   }
+
+
+    function updateOnClick(value) {
+        let clickValue;
+        
+    
+        switch (parseInt(value)) {
+            case 1:
+                
+                clickValue = 0.1;
+                break;
+            case 2:
+                clickValue = 0.3;
+                break;
+            case 3:
+                clickValue = 0.6;
+                break;
+            case 4:
+                clickValue = 0.9;
+                break;
+            case 5:
+                clickValue = 1;
+                break;
+            case 6:
+                clickValue = 2;
+                break;
+            case 7:
+                clickValue = 3;
+                break;
+            case 8:
+                clickValue = 3;
+                break;
+            case 9:
+                clickValue = 4;
+                break;
+            case 10:
+                clickValue = 5;
+                break;
+            default:
+                clickValue = 0;
+        }
+    
+        const clickLink = document.getElementById('clickLink');
+        clickLink.setAttribute('onclick', `clickS(${clickValue})`);
+        clickLink.click();
+    }
+    
+    
+
+  

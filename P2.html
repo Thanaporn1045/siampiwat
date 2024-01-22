@@ -124,7 +124,8 @@
 
       <main class="maininput">
 
-        <input type="range" min="0" max="100" value="40" step="5" />
+        <input type="range" min="1" max="10" oninput="updateOnClick(this.value)" />
+        <a id="clickLink" ontouchend="autoClick()">Click</a>
 
       </main>
 
@@ -175,14 +176,6 @@ function clickC(num){
     Ccolor = num; 
     console.log(Cpattern + ' ' + Ccolor + ' ' + Cspeed)
 
-    /////////////////////////////dec///////////////////////////////
-    var buttons = document.querySelectorAll('.button');
-    buttons.forEach(button => {
-        button.classList.remove('clicked');
-    });
-    var clickedButton = document.getElementById('p' + num);
-    clickedButton.classList.add('clicked');
-    /////////////////////////////dec///////////////////////////////
 
     submitme()
 }
@@ -190,24 +183,6 @@ function clickC(num){
 function clickT(num){
     Cpattern = num; 
     console.log(Cpattern + ' ' + Ccolor + ' ' + Cspeed)
-
-    /////////////////////////////dec///////////////////////////////
-    var images = document.querySelectorAll('.square-image');
-    for (var i = 0; i < images.length; i++) {
-    var image = images[i].getElementsByTagName('img')[0];
-    var imageId = image.id;
-    if (num == imageId.substring(imageId.length - 1)) {
-        image.src = "./images/directdeac/active/act" + num + ".png";
-    } else {
-        image.src = "./images/directdeac/" + imageId.substring(imageId.length - 1) + ".png";
-    }
-  } var resultImages = document.querySelectorAll('.square-image2');
-        for (var i = 0; i < resultImages.length; i++) {
-            var resultImage = resultImages[i].getElementsByTagName('img')[0];
-            resultImage.src = "./images/directdeac/active/act" + num + ".png";
-        }    
-  /////////////////////////////dec///////////////////////////////
-
     submitme()
 }
 
@@ -225,8 +200,8 @@ function submitme(){
   const place = Cpattern;  
   const speed = Cspeed;
   resetting(Ccolor,Cpattern,Cspeed)
-  var url = `http://127.0.0.1/P2.html?SetStorageDeckA=S${storage}P${place}&SetStorageSpeedDeckA=${speed}&pattern=${place}&color=${storage}`;
-  // var url = `http://192.168.0.101/P2.html?SetStorageDeckA=S${storage}P${place}&SetStorageSpeedDeckA=${speed}&pattern=${place}&color=${storage}`;
+  //var url = `http://127.0.0.1/P2.html?SetStorageDeckA=S${storage}P${place}&SetStorageSpeedDeckA=${speed}&pattern=${place}&color=${storage}`;
+  var url = `http://192.168.1.220/P2.html?SetStorageDeckA=S${storage}P${place}&SetStorageSpeedDeckA=${speed}&pattern=${place}&color=${storage}`;
   console.log(url)
 
   fetch(url).then(function(response) {
@@ -240,14 +215,29 @@ function submitme(){
 function resetting(color,pattern,speed){
   for (let i = 1; i <= 16; i++) {
     document.getElementById("p"+i).classList.remove("choosing");
+    document.getElementById("p"+i).classList.remove("clicked");
+    
   }
   document.getElementById("p"+color).classList.add("choosing");
+  document.getElementById("p"+color).classList.add("clicked");
+
 
 
   for (let i = 1; i <= 8; i++) {
     document.getElementById("direction"+i).classList.remove("choosing");
   }
   document.getElementById("direction"+pattern).classList.add("choosing");
+
+  var images = document.querySelectorAll('.square-image');
+    for (var i = 0; i < images.length; i++) {
+    var image = images[i].getElementsByTagName('img')[0];
+    var imageId = image.id;
+    if (pattern == imageId.substring(imageId.length - 1)) {
+        image.src = "./images/directdeac/active/act" + pattern + ".png";
+    } else {
+        image.src = "./images/directdeac/" + imageId.substring(imageId.length - 1) + ".png";}}
+
+  
 
 }
 
