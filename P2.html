@@ -203,7 +203,8 @@ function submitme(){
   resetting(Ccolor,Cpattern,Cspeed)
   //var url = `http://127.0.0.1/P2.html?SetStorageDeckA=S${storage}P${place}&SetStorageSpeedDeckA=${speed}&pattern=${place}&color=${storage}`;
   //var url = `http://192.168.1.220/P2.html?SetStorageDeckA=S${storage}P${place}&SetStorageSpeedDeckA=${speed}&pattern=${place}&color=${storage}`;
-  var url = `http://169.254.124.209/P2.html?SetStorageDeckA=S${storage}P${place}&SetStorageSpeedDeckA=${speed}&pattern=${place}&color=${storage}`;
+   var url = `http://192.168.6.99/P2.html?SetStorageDeckA=S${storage}P${place}&SetStorageSpeedDeckA=${speed}&pattern=${place}&color=${storage}`;
+  ///var url = `http://192.168.1.170/P2.html?SetStorageDeckA=S${storage}P${place}&SetStorageSpeedDeckA=${speed}&pattern=${place}&color=${storage}`;
   console.log(url)
 
   fetch(url).then(function(response) {
