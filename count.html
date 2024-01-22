@@ -6,9 +6,22 @@
   <link rel="stylesheet" href="./css/Count.css">
   <script type="text/javascript" src="./java/CountJava.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+      <!------------------------------------------------------ Madrix ------------------------------------------->
+      <meta name="generator" content="mc" />
+      <meta name="author" content="jky" />
+      <meta name="date" content="2018-05-02" />
+      <meta name="robots" content="none" />
+      <meta name="robots" content="noindex,nofollow" />
+      <meta name="GOOGLEBOT" content="NOARCHIVE" />
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta http-equiv="pragma" content="no-index" />
+      <meta http-equiv="pragma" content="no-cache" />
+      <meta http-equiv="cache-control" content="no-cache" />
+      <meta display-mode="fullscreen"/>
      <!------------------------------------------------------ apple fullscreen ------------------------------------------->
      <meta name="apple-mobile-web-app-capable" content="yes" />
      <meta name="mobile-web-app-capable" content="yes" />
+     <meta http-equiv="X-Frame-Options" content="deny">
      <!------------------------------------------------------Title ------------------------------------------->
      <title>SiamPiwat</title>
 </head>
@@ -46,4 +59,33 @@
     
     <div class="iconbar"><img  src="./css/SiamPiwat/siamicon.png"></div>
 </body>
+
+<script>
+  document.addEventListener('touchmove', function (e) {
+      e.preventDefault();
+  });
+
+  var hiddenTime = 0;
+    
+    document.addEventListener("visibilitychange", function() {
+        if (document.hidden) {
+            // ถ้าเอกสารถูกซ่อน (ย่อแล้ว)
+            hiddenTime = Date.now();
+        } else {
+            // ถ้าเอกสารปรากฏอยู่ (แทปถูกเปลี่ยน)
+            var currentTime = Date.now();
+            var elapsedTime = currentTime - hiddenTime;
+            
+            // ตรวจสอบว่าเวลาที่ถูกซ่อนน้อยกว่าเวลาที่กำหนด
+            if (elapsedTime < 1000) { // ในที่นี้ใช้ 1000 มิลลิวินาที (1 วินาที) เป็นตัวอย่าง
+                // ป้องกันการเปลี่ยนแทปหรือการย่อแล้ว
+                document.addEventListener("visibilitychange", function() {
+                    if (document.hidden) {
+                        document.location.href = "about:blank";
+                    }
+                });
+            }
+        }
+    });
+</script>
 </html>

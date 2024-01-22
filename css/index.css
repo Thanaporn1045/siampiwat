@@ -10,6 +10,9 @@ background-repeat: no-repeat;
 background-attachment: fixed; 
 /* background-position-y: -10px; */
 background-position-x: 25px;
+touch-action: none;
+overscroll-behavior: none;
+touch-action: pan-y; 
 
 }
 /* .BG{
